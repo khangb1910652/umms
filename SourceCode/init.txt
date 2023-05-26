@@ -1,0 +1,9 @@
+Server:
+    $ npm i
+    $ npm start
+    or
+    $ yarn
+    $ yarn start
+UI:
+    $ npm i
+    $ npm run dev
