@@ -1,92 +1,46 @@
-# User Manual Manager System
+# Hướng Dẫn Sử Dụng và Cài Đặt Mã Nguồn
 
+## Bước 1: Cài Đặt Node.js
+1. Truy cập trang web chính thức của Node.js tại [https://nodejs.org](https://nodejs.org).
+2. Tải xuống phiên bản Node.js phù hợp với hệ điều hành của bạn (thường là phiên bản LTS - Long-Term Support).
+3. Mở tệp cài đặt đã tải xuống và làm theo hướng dẫn cài đặt trên màn hình.
+4. Hoàn tất quá trình cài đặt Node.js.
 
+## Bước 2: Cài Đặt LibreOffice
+1. Mở terminal hoặc command prompt trên máy chủ.
+2. Chạy lệnh `$ soffice` để kiểm tra xem LibreOffice đã được cài đặt hay chưa.
+3. Nếu LibreOffice chưa được cài đặt, hãy cài đặt trước khi tiếp tục.
+4. Cài đặt biến môi trường để hệ thống có thể tìm thấy đường dẫn của LibreOffice.
 
-## Getting started
+## Bước 3: Thiết Lập Oracle Cloud
+### Cách 1: Sử Dụng Oracle Cloud Trực Tiếp Trong Mã Nguồn
+### Cách 2: Tạo Một Oracle Cloud Riêng Của Bạn
+1. Truy cập trang web chính thức của Oracle tại [https://cloud.oracle.com/](https://cloud.oracle.com/) và đăng nhập hoặc tạo một tài khoản nếu chưa có.
+2. Điều hướng đến trang "Oracle Database" và chọn "Autonomous Databases".
+3. Tạo một "Autonomous Database" (ghi nhớ lưu lại username và password).
+4. Sau khi tạo xong, chọn "Database connection", tải về "Instance Wallet" và sao chép một "Connection string" bất kỳ.
+5. Giải nén "Instance Wallet" đã tải về và lưu tất cả trong thư mục "admin" (Lưu ý giữ lại "Instance Wallet" dạng .zip).
+6. Xoá thư mục "admin" trong mã nguồn "umms\SourceCode\server\src\database\instantclient_21_10\network".
+7. Sao chép thư mục "admin" vào mã nguồn "umms\SourceCode\server\src\database\instantclient_21_10\network".
+8. Chỉnh sửa thông tin kết nối trong "umms\SourceCode\server\src\database\knex.ts".
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Bước 4: Cài Đặt Oracle SQL Developer
+1. Truy cập trang web chính thức của Oracle để tải về ứng dụng Oracle SQL Developer [https://www.oracle.com/database/sqldeveloper/](https://www.oracle.com/database/sqldeveloper/) và đăng nhập hoặc tạo một tài khoản nếu bạn chưa có.
+2. Cài đặt ứng dụng và chọn "New Connection".
+3. Nhập username và password. Nếu sử dụng Oracle cloud trực tiếp trong mã nguồn thì username là “ADMIN” và password là “Thuctap2023*”.
+4. Chọn Cloud Wallet tại Connection Type.
+5. Browse đến file Wallet.zip đã tải về. Nếu sử dụng Oracle cloud trực tiếp trong mã nguồn thì chọn file Wallet.zip tại “umms\SQL\Wallet_KNUM984WSLT3BMIX.zip”.
+6. Chọn Connect để kết nối đến Oracle Cloud.
+7. Mở file Table_Script.txt tại “umms\SQL\Table_Script.txt” và chạy toàn bộ lệnh tạo bảng và thêm dữ liệu.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Bước 5: Cài Đặt và Khởi Chạy Máy Chủ (Server)
+1. Mở terminal hoặc command prompt trên máy chủ.
+2. Di chuyển đến thư mục chứa mã dự án của máy chủ.
+3. Chạy lệnh `$ npm i` để cài đặt các phụ thuộc của dự án.
+4. Sau khi quá trình cài đặt hoàn tất, chạy lệnh `$ npm start` để khởi chạy máy chủ.
 
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/tonghaidang93/umms.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/tonghaidang93/umms/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## Bước 6: Cài Đặt và Chạy Giao Diện Người Dùng (UI)
+1. Mở terminal hoặc command prompt trên máy tính.
+2. Di chuyển đến thư mục chứa mã dự án của giao diện người dùng.
+3. Chạy lệnh `$ npm i` để cài đặt các phụ thuộc của dự án.
+4. Sau khi quá trình cài đặt hoàn tất, chạy lệnh `$ npm run dev` để khởi chạy giao diện người dùng.
