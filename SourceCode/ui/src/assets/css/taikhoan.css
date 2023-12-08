@@ -1,0 +1,448 @@
+.bg-tk {
+  background-color: #0c62b5;
+}
+
+.form-wrapper {
+  margin-top: 70px;
+}
+
+.div-search-header {
+  display: flex;
+}
+
+.my-custom-font {
+  font-size: 20px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-tk {
+  color: #0c62b5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.khung {
+  border: 2px solid #a4cdf4;
+  border-radius: 15px;
+}
+
+.text-color {
+  color: #66aef3;
+}
+
+.button-google {
+  width: 145px;
+  height: 45px;
+  border-radius: 35px;
+  background-color: white;
+  border: 2px solid #a4cdf4;
+  margin-bottom: 5px;
+}
+
+.button-dangkyngay {
+  height: 30px;
+  background-color: white;
+  border: 2px solid white;
+  text-align: right;
+  padding: 0;
+}
+
+.button-dangnhapngay {
+  height: 30;
+  background-color: white;
+  border: 2px solid white;
+  flex-wrap: nowrap;
+  padding: 0;
+  text-align: left;
+}
+
+.td-end-tk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg-input {
+  background-color: #c0dbea;
+}
+
+.form-radius {
+  border-radius: 15px;
+}
+
+.style-radius {
+  border-radius: 0px 15px 15px 0px;
+  width: 50px;
+}
+
+.padding-eye {
+  padding-top: 15px;
+  padding-left: 15px;
+  color: #d885a3;
+}
+
+.mwidth {
+  max-width: 100%;
+}
+
+.mwidth-login {
+  max-width: 55%;
+}
+
+.mwidth-tt {
+  max-width: 80%;
+}
+
+.max-khung {
+  max-width: 70%;
+}
+
+.width-form-fill {
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+.mg-khong {
+  margin: 0px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.error-message {
+  position: absolute;
+  top: 0;
+  left: 105%;
+  width: 50%;
+  height: 100%;
+  padding: 3px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  font-size: 60%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.error-message::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f8d7da;
+  border-bottom: 8px solid transparent;
+}
+
+.error-field {
+  border-color: #f8d7da;
+}
+
+.dangky-below {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.text-dangky {
+  align-items: center;
+  margin: 0;
+}
+
+.button-hoso {
+  padding-left: 10px;
+  color: white;
+  margin-bottom: 5px;
+  background-color: #003c76;
+  border: 2px solid #a4cdf4;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.div-container {
+  display: flex;
+}
+
+.div-left {
+  flex: 1;
+}
+
+.div-center {
+  flex: 2;
+}
+
+.div-nguoidung {
+  flex: 3;
+}
+
+.div-right {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: right;
+  position: relative;
+}
+
+.atv-macdinh {
+  max-width: 100%;
+  max-height: 100%;
+  right: 0;
+  border-radius: 10px;
+}
+
+.small-round-button {
+  position: absolute;
+  bottom: -18px;
+  right: -19px;
+  width: 40px;
+  padding: 0;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+.button-hoso.active {
+  border: 2px solid black;
+}
+
+.bg-search-nguoidung {
+  border-radius: 5px;
+  border: 2px solid #a4cdf4;
+  right: 0;
+}
+
+.equal-width-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.equal-width-table td {
+  width: 20%;
+}
+
+.p-table {
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+.td-th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.td-avt {
+  width: 10%;
+}
+
+.td-quyen {
+  width: 18%;
+}
+
+.td-ngay {
+  width: 25%;
+}
+
+.td-ct {
+  text-align: left;
+}
+
+.xanh-option {
+  background-color: #c0dbea;
+}
+
+.khung-tt {
+  border: 2px solid #a4cdf4;
+  border-radius: 5px;
+}
+
+.bg-color-xemtt {
+  background: #0c62b5;
+  color: white;
+}
+
+.equal-width-table tr:hover {
+  background-color: #dbdbdb;
+}
+
+.equal-width-table tr:hover td {
+  color: #333;
+}
+
+.canhgiua-dn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-dn {
+  white-space: nowrap;
+}
+
+.w-td-1 {
+  width: 30%;
+}
+
+.w-td-2 {
+  width: 70%;
+}
+
+.text-font-or {
+  font-size: 14px;
+}
+
+.mg-bt-tk {
+  margin-bottom: 30px;
+}
+
+.mg-bt-tt {
+  margin-bottom: 20px;
+}
+
+/* Điện thoại */
+@media (max-width: 767px) {
+  .font-tk {
+    font-size: 200%;
+  }
+
+  .my-custom-font {
+    font-size: 14px;
+  }
+
+  .width-form-fill {
+    gap: 20px;
+  }
+
+  .padding-eye {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .style-radius {
+    width: 40px;
+  }
+
+  .button-google {
+    width: 110px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: white;
+    border: 2px solid #a4cdf4;
+    margin-bottom: 5px;
+  }
+  
+  .button-google img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  .td-end-tk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa hai dòng */
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .font-tk {
+    font-size: 250%;
+  }
+
+  .width-form-fill {
+    gap: 25px;
+  }
+
+  .text-dangky {
+    padding-left: 10px;
+  }
+
+  .button-dangnhapngay {
+    padding-left: 10px;
+  }
+
+  .small-round-button {
+    bottom: -12px;
+    right: -15px;
+  }
+  
+  .icon-img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Đien thoai and Tablet */
+@media (max-width: 1024px) {
+  .error-message::before {
+    display: none;
+  }
+
+  .width-form-fill {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .width-form-fill tr td:not(.td-end-tk) {
+    display: block;
+  }
+
+  .error-message {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 100%;
+    height: 65%;
+    padding: 3px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 15px;
+    font-size: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .mwidth {
+    max-width: 80%;
+  }
+
+  .w-td-2 {
+    width: 100%;
+  }
+
+  .mwidth-login {
+    max-width: 75%;
+  }
+
+  .td-end-tk {
+    justify-content: left;
+  }
+}

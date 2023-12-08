@@ -1,0 +1,63 @@
+.mt-navbar {
+  margin-top: 74px;
+}
+.fsize {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+.arrow-up:before {
+  content: "\25b2";
+  margin-left: 5px;
+}
+
+.arrow-down:before {
+  content: "\25bc";
+  margin-left: 5px;
+}
+
+.selected {
+  background-color: #c2c2c2;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.div-selected {
+  display: flex;
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.ml1 {
+  margin-left: 10px;
+}
+
+.ml2 {
+  margin-left: 30px;
+}
+
+.ml3 {
+  margin-left: 50px;
+}
+
+.ml4 {
+  margin-left: 70px;
+}
+
+.ml5 {
+  margin-left: 90px;
+}
+
+.ml6 {
+  margin-left: 110px;
+}

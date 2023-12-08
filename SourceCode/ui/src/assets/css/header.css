@@ -1,0 +1,278 @@
+.bg-color-hearder {
+  background-color: #0c62b5;
+  height: 70px;
+}
+
+.icon {
+  width: 40px;
+}
+
+.text-cl-login {
+  color: white;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 25px;
+}
+
+.search-header {
+  width: 30%;
+}
+
+.bg-search {
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #a4cdf4;
+  height: 40px;
+}
+
+.search-div-header {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  overflow-y: auto;
+  max-height: 1000%;
+}
+
+.show-div-search {
+  display: block;
+}
+
+.canhgiua {
+  margin: auto;
+}
+
+.list-item-ct {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  color: #0c62b5;
+}
+
+.list-item-ct:hover {
+  background-color: lightgray;
+}
+
+.pd-right {
+  padding-right: 16px;
+}
+
+.pd-left {
+  padding-left: 16px;
+}
+
+.avt {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+.logout-div {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.logout-div:before {
+  content: "";
+  position: absolute;
+  right: 23px;
+  top: -26px;
+  width: 26px;
+  height: 26px;
+  border-top: 0;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid rgb(255, 255, 255);
+  border-left: 13px solid transparent;
+}
+
+.thong-bao-div {
+  position: absolute;
+  top: 100%;
+  right: 60px;
+  width: 440px;
+  max-height: 650px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  border-radius: 10px;
+}
+.thong-bao-div:before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: -26px;
+  width: 26px;
+  height: 26px;
+  border-top: 0;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid rgb(255, 255, 255);
+  border-left: 13px solid transparent;
+}
+
+.padding-button {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  width: max-content;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+.button-profile {
+  border-radius: 10px;
+  background-color: #0c62b5;
+  color: white;
+  border: 2px solid #a4cdf4;
+  font-size: 25px;
+  width: 130px;
+}
+.btn-thong-bao {
+  border-radius: 10px;
+  background-color: #0c62b5;
+  color: white;
+  border: 2px solid #a4cdf4;
+  font-size: 15px;
+  width: 100px;
+}
+.button-in-home {
+  border-radius: 35px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid #a4cdf4;
+  width: 125px;
+  padding: 0;
+  height: 40px;
+}
+
+.button-in-home > .nav-link {
+  padding: 0;
+}
+
+.search-btn {
+  border-radius: 0 5px 5px 0;
+}
+
+/* Điện thoại */
+@media (max-width: 767px) {
+  .icon,
+  .avt {
+    width: 35px;
+    height: 35px;
+  }
+
+  .pd-right {
+    padding-right: 8px;
+  }
+
+  .button-in-home {
+    border-radius: 25px;
+    font-size: 14px;
+    width: 72px;
+    padding: 0;
+    height: 35px;
+  }
+
+  .text-cl-login {
+    font-size: 20px;
+  }
+
+  .bg-search {
+    font-size: 14px;
+    height: 35px;
+  }
+
+  .search-btn {
+    height: 35px;
+  }
+
+  .logout-div:before {
+    right: 21px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-cl-login {
+    font-size: 20px;
+  }
+
+  .button-in-home {
+    font-size: 16px;
+    width: 110px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-ql {
+    display: none;
+    padding: 0;
+  }
+}
+.btn.active {
+  border: 2px solid black;
+  color: black;
+}
+
+.chua-doc{
+  overflow-y: auto;
+  max-height: 500px;
+}
+.item-chua-doc {
+  width: 400px;
+  position: relative; /* Cần để thiết lập vị trí cho ::after */
+  color: black;
+}
+
+.item-chua-doc::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 195, 255, 0.986);
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.item-tat-ca {
+  width: 400px;
+  color: black;
+}
+.notification-button {
+  position: relative;
+}
+
+.notification-button::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: blue;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}

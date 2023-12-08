@@ -1,0 +1,10 @@
+Server:
+    require: install LibreOffice ( try command $ soffice)
+    $ npm i
+    $ npm start
+    or 
+    $ yarn
+    $ yarn start
+UI:
+    $ npm i
+    $ npm run dev

@@ -1,0 +1,140 @@
+.container-content {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.content {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.slide-height {
+  min-height: 640px;
+  max-height: 640px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.content-height {
+  min-height: 584px;
+  max-height: 584px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.swal-loading-popup {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.swal-loading-content {
+  text-align: center;
+}
+
+.swal-loading-spinner {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #f3f3f3;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.captcha {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.btn-captcha{
+  color: white;
+  background-color: #0c62b5;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 100px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Chiều cao của phần tử cha */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.ip-search[type="text"] {
+  flex-grow: 1;
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  outline: none;
+}
+
+.btn-search[type="submit"] {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nut-search {
+  color: #888888;
+  font-size: 20px;
+}
+
+.ct-trangchu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h1-css {
+  color:#3498db;
+}
+.search-div {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  overflow-y: auto;
+  max-height: 200%;
+}
+
